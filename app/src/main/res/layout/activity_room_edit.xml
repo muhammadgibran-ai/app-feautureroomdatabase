@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RoomEditActivity">
+
+    <EditText
+        android:id="@+id/etEditJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Judul Tugas"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etEditDeskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Deskripsi Tugas"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/etEditKategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Kategori (Misal : Kuliah, Kerja, Pribadi)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etEditTanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Deadline/Tanggal"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/btnHapus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF5722"
+            android:text="Hapus" />
+    </LinearLayout>
+
+</LinearLayout>
